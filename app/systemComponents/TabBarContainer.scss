@@ -1,0 +1,13 @@
+
+html {
+    --tabBarHeight: 45px;
+}
+
+.TabBarContainer {
+    .TabBar {
+        bottom: 0;
+        border-bottom: none; border-left: none; border-right: none;
+        height: calc(var(--safeAreaBottom) + var(--tabBarHeight));
+        padding-bottom: var(--safeAreaBottom);
+    }
+}

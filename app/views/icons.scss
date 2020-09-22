@@ -1,0 +1,10 @@
+.Icon { background-color: RGB(var(--brand)); width: 24px; height: 24px }
+.IconBack {
+    width: 22px; height: 21px; transform: rotate(90deg);
+}
+.active {
+    .IconHome { mask-image: url("/images/home-filled.svg") !important }
+    .IconSearch { mask-image: url("/images/search-filled.svg") !important }
+    .IconHeart { mask-image: url("/images/heart-filled.svg") !important }
+    .IconPublish { mask-image: url("/images/heart-filled.svg") !important }
+}
