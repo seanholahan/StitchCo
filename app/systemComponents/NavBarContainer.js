@@ -41,7 +41,7 @@ class NavBarInner extends Controller {
     class = () => "row maxHeight"
     layout = s => [
         [NavBarItem, { class: "left" }, s.left || [Icon, { icon: "/images/dm.svg"}]],
-        ['ellipsis semibold row', s.title || "undefined"],
+        ['ellipsis maxHeight semibold row', s.title || "undefined"],
         [NavBarItem, { class: "right" }, s.right || [Icon,{ icon: "/images/dm.svg" }]]
 
 	]

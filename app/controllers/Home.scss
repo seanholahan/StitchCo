@@ -1,0 +1,47 @@
+.Home {
+    .Button {
+        background-color: orange;
+        width: auto;
+        padding: 15px;
+        border-radius: 5px;
+    }
+}
+
+
+.ItemCard {
+    background: rgb(103,103,103);
+    background: radial-gradient(circle, rgba(103,103,103,1) 0%, rgba(0,0,0,1) 100%);
+    // background: radial-gradient(circle at 100%, #333, rgb(31, 31, 31) 50%, rgb(28, 27, 27) 75%, #333 75%);
+    // background-color: RGB(var(--backgroundColorOff));
+    border-radius: 5px;
+    margin: 10px;
+    width: 100%;
+    padding: 10px;
+    .Image {
+        height: 200px;
+        width: 100%;
+        width: 100%;
+        padding: 100% 0px 0px 0px;
+        border-radius: 5px;
+    }
+    .Title {
+        margin: 20px 0 10px 0;
+    }
+
+    
+}
+
+.NativeImage {
+    width: 200px;
+    height: 200px;
+}
+
+
+//For upload
+.Input {
+    background-color: white !important;
+    color: black;
+    ::placeholder {
+        color: black;
+    }
+}

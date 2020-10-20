@@ -1,0 +1,89 @@
+
+.TextInputTitle, .Dropdown, .TextareaTitle, .TextInputFileTitle {
+	position: relative;
+	.Title { margin-bottom: 6px }
+	.Tip { font-size: 0.8em; color: #999; font-style: italic; margin-top: 6px; }
+}
+
+.TextInputFileTitle.Landscape .Image { width: 224px; }
+.TextInputFile {
+	position: relative;
+	color: #888;
+
+	input { opacity: 0; position: absolute; }
+	.Image, .Text { height: 150px }
+	.Image {
+		background-color: rgba(0,0,0,0.3);
+		width: 100px;
+		margin-right: 20px;
+		border-radius: var(--borderRadius);
+		box-shadow: var(--shadow);
+	}
+}
+
+.Select {
+	width: 100%;
+	border: 1px solid #27d;
+	padding: 10px;
+	border-radius: 4px;
+	font-size: 0.9em;
+	justify-content: start;
+}
+
+.SelectArrow:before {
+	content: "";
+	position: absolute;
+	right: 1px;
+	background: url("/images/angle-arrow-down.svg") no-repeat center center;
+	background-size: contain;
+	width: 40px;
+	height: 16px;
+}
+
+.Radio {
+	height: 22px; width: 22px;
+	border-radius: 11px;
+	margin-right: 8px;
+	background-color: transparent;
+	border: 2px solid #444;
+}
+
+.Radio:checked {
+	background-color: #444;
+	border: 4px double white;
+	transform: scale(1.1);
+}
+
+.TextInput, .Submit, .Textarea {
+	background-color: rgba(0,0,0,0.03);
+	border: 1px solid rgb(99, 99, 99);
+	border-radius: 4px;
+	padding: 13px 17px;
+	font-size: 0.9em;
+	transition: background-color 0.3s, border-color 0.3s;
+}
+
+.Submit {
+	background-color: var(--green);
+	color: white;
+	font-weight: 700;
+	border-color: transparent;
+	white-space: nowrap;
+}
+
+.TextInput::placeholder { color: #666 }
+.TextInput.Error { border-color: #f00 }
+.Disabled .TextInput, .Disabled .Radio { color: #aaa; pointer-events: none; }
+.Disabled .TextInput::placeholder { opacity: 0; }
+.Disabled .Radio:not(:checked) { border-color: #bbb; }
+.Disabled .Radio:checked { background-color: #bbb; }
+.Submit.Disabled { background-color: #aaa; pointer-events: none; }
+.Submit:hover { background-color: var(--greenHover); }
+.Submit.Destructive { background-color: var(--red) }
+.Submit.Destructive:hover { background-color: var(--redHover) }
+.Submit.Warning { background-color: var(--blue) }
+.Submit.Warning:hover { background-color: var(--blueHover) }
+
+.Link {
+	text-decoration: underline;
+}

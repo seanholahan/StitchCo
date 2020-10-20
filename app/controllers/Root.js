@@ -1,4 +1,4 @@
-require("./root.scss")
+require("./Root.scss")
  // layout = s => [
     //     [TransitionContainer,{transition: {rotate: [90, 0, -90], opacity: [0,1,0]}, drag: "horizontal"}, [//{
     //         [Home], 
